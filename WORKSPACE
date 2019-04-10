@@ -6,7 +6,12 @@ android_sdk_repository(
     name = "androidsdk",
     api_level = 28,
     build_tools_version = "28.0.2",
-    # path = "/path/to/sdk",
+    path = "/tmp/android-sdk-linux",
+)
+
+android_ndk_repository(
+    name = "androidndk",
+    path = "/tmp/android-sdk-linux/ndk-bundle",
 )
 
 # Android Test Support
